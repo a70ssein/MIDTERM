@@ -1,0 +1,78 @@
+<% include ../partials/header.ejs %>
+
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="IdTextField">Faculty ID</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="IdTextField"
+                      placeholder="Faculty Id"
+                      name="Facultyid"
+                      
+                      required
+                    />
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="NameTextField">Faculty Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="NameTextField"
+                      placeholder="Faculty Name"
+                      name="Facultyname"
+                      
+                      required
+                    />
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="DeptTextField">Department</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="AuthorDeptTextField"
+                      placeholder="Department"
+                      name="Department"
+                      
+                      required
+                    />
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="SubTextField">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="SubTextField"
+                      placeholder="Subject"
+                      name="Subject"
+                    
+                      required
+                    />
+                  </div>
+          
+          
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/faculties" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+
+<% include ../partials/footer.ejs %>
